@@ -1,0 +1,304 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Pen and Parable</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    :root {
+      --primary-color: #49e4ec; /* Aqua Blue */
+      --secondary-color: #000079; /* Dark Navy Blue */
+      --accent-color: #944734; /* Amber */
+      --text-color-light: #1b1919; /* Dark Gray text */
+      --text-color-dark: #ffffff; /* Dark Red text */
+      --border-color: #6A0572; /* Purple border color */
+      --font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-family);
+      color: var(--text-color-dark);
+      background-color: var(--secondary-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid #6A0572; /* Dark purple border color */
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White color */
+}
+/* Add magical effect to navbar links on hover */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--accent-color); /* Amber color */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color); /* Amber color */
+}
+
+.navbar-nav .nav-link:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+    .banner {
+      background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+      text-align: center;
+      padding: 100px 0;
+      color: var(--text-color-light);
+    }
+
+    .banner h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 20px 0;
+      text-align: center;
+      color: var(--text-color-light);
+    }
+
+    .services {
+      background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+      color: var(--text-color-light);
+      padding: 100px 0;
+    }
+
+    .service {
+      margin-bottom: 30px;
+      text-align: center;
+      border: 2px solid var(--border-color);
+      padding: 20px;
+    }
+
+    .service h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background-color: var(--primary-color);
+      color: var(--text-color-light);
+      padding: 100px 0;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .portfolio {
+      background-color: var(--text-color-dark);
+      color: var(--text-color-light);
+      padding: 100px 0;
+    }
+
+    .portfolio-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .portfolio-item h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background-color: var(--secondary-color);
+      color: var(--text-color-light);
+      padding: 100px 0;
+    }
+
+    .contact-details li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: var(--primary-color);
+      color: var(--text-color-light);
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .magical-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(to right, var(--accent-color), var(--primary-color));
+      color: var(--text-color-light);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .magical-button:hover {
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      transform: scale(1.05);
+    }
+
+    .black-bg-text {
+      color: var(--text-color-light);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Pen and Parable</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="banner">
+    <div class="container text-center">
+      <h1 class="display-4">Welcome to <span class="text-primary">Pen and Parable</span></h1>
+      <p>Your Gateway to Impressive Writing</p>
+      <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+    </div>
+  </section>
+
+  <section id="services" class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h2 class="display-4 mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service">
+            <h3 class="mb-3">Blog Posts</h3>
+            <p class="lead">Engaging articles that captivate and educate your audience.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service">
+            <h3 class="mb-3">Assignments</h3>
+            <p class="lead">Meticulously crafted assignments that showcase your understanding.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service">
+            <h3 class="mb-3">Article Writing</h3>
+            <p class="lead">Informative and compelling articles that spark curiosity.</p>
+          </div>
+        </div>
+      </div>
+      <p class="lead mt-4">Ready to elevate your content? Let's collaborate and create something extraordinary together.</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://images.pexels.com/photos/4240497/pexels-photo-4240497.jpeg" alt="Fatima's profile picture" class="img-fluid rounded-circle mb-4">
+        </div>
+        <div class="col-md-6">
+          <h2 class="display-4 mb-4">About Me</h2>
+          <p class="lead">Hello there! 👋 I'm Fatima, a passionate writer and dedicated assignment enthusiast.</p>
+          <!-- Add more about me content... -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2 class="display-4 text-center mb-4">Explore My Work</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="portfolio-item">
+            <img src="https://images.pexels.com/photos/5900133/pexels-photo-5900133.jpeg" alt="Sample 1" class="img-fluid mb-3">
+            <h3>Engaging Blog Post</h3>
+            <p>An article that captivates readers from start to finish, exploring a fascinating topic.</p>
+            <a href="https://steemit.com/hive-108451/@mateenfatima/steemit-crypto-academy-s8w2-or-or-what-are-stablecoins" class="btn btn-primary">Read Full Article</a>
+          </div>
+        </div>
+        <!-- Add more portfolio items... -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="display-4 mb-4">Get in Touch</h2>
+      <p class="lead">Ready to take your writing to the next level? Let's connect and bring your ideas to life!</p>
+      <p class="lead">Whether you have a writing project in mind or simply want to chat about the power of words, I'm here to listen and collaborate.</p>
+      <ul class="list-unstyled">
+        <li><strong>Email:</strong> <a href="mailto:mateenfatima@gmail.com">mateenfatima@gmail.com</a></li>
+        <li><strong>Social Media:</strong> <a href="https://www.facebook.com/profile.php?id=100075688782141&mibextid=D4KYlr">Facebook</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; <span class="current-year"></span> Pen and Parable. All rights reserved.</p>
+    <p><a href="privacy-policy.html" class="text-white">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach(link => {
+        link.addEventListener("click", event => {
+          event.preventDefault();
+          const target = document.querySelector(link.getAttribute("href"));
+          target.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      const currentYear = new Date().getFullYear();
+      const yearSpans = document.querySelectorAll(".current-year");
+      yearSpans.forEach(yearSpan => {
+        yearSpan.textContent = currentYear;
+      });
+
+      const changeColorButton = document.getElementById("changeColorButton");
+      const servicesSection = document.getElementById("services");
+
+      changeColorButton.addEventListener("click", function () {
+        if (servicesSection.style.background.indexOf("primary-color") !== -1) {
+          servicesSection.style.background = "linear-gradient(to bottom, var(--secondary-color), var(--primary-color))";
+        } else {
+          servicesSection.style.background = "linear-gradient(to bottom, var(--primary-color), var(--secondary-color))";
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
