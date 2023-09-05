@@ -152,7 +152,7 @@
             border: 2px solid #e0e0e0;
             padding: 30px;
             margin: 20px;
-            background-color: #ffffff;
+            background-color: hsl(0, 6%, 15%);
             border-radius: 20px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             display: inline-block;
@@ -167,13 +167,13 @@
         /* Style the plan title */
         .plan h3 {
             font-size: 24px;
-            color: #333; /* Dark text color */
+            color: #ffffff; /* Dark text color */
         }
 
         /* Style the plan description */
         .plan p {
             font-size: 16px;
-            color: #666; /* Slightly darker text color */
+            color: #ffffff; /* Slightly darker text color */
         }
 
         /* Style the price */
@@ -181,13 +181,13 @@
             font-size: 32px;
             font-weight: bold;
             margin-top: 20px;
-            color: #8a2be2; /* Purple price text */
+            color: #6ad5e6; /* Purple price text */
         }
 
         /* Style the select plan button */
         .select-plan-btn {
             background-color: #8a2be2;
-            color: #fff;
+            color: #8e0707;
             border: none;
             padding: 12px 24px;
             border-radius: 30px;
@@ -305,79 +305,90 @@
             </div>
         </div>
     </section>
-    <section class="pricing-section" style="background-color: #f5f5f5;">
+    <section id="writing-plans" class="bg-dark text-white py-5">
         <div class="container">
-            <h2 style="color: #333;">Writing Plans</h2>
-            <p style="color: #666;">Choose the plan that best suits your writing needs. Whether you're a casual writer or a professional content creator, we have a plan for you.</p>
+            <h2 class="display-4 text-center mb-4">Explore Writing Plans</h2>
+            <p class="text-center mb-4">Choose the plan that best suits your writing needs. Whether you're a casual writer or a professional content creator, we have a plan for you.</p>
     
-            <div class="plan" style="background-color: #fff; color: #333;">
-                <h3 style="color: #333;">Basic Plan</h3>
-                <p style="color: #666;">Ideal for occasional writers or those looking to get started.</p>
-                <ul style="color: #666;">
-                    <li>Access to basic writing tools.</li>
-                    <li>Limited document storage.</li>
-                    <li>Email support.</li>
-                </ul>
-                <p class="price" style="color: #8a2be2;">$2</p>
-                <a href="https://sites.google.com/view/pensandparable/home#pro-plan" class="select-plan-btn">
-                    Select Plan
-                </a>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="plan text-center">
+                        <i class="fas fa-pencil-alt fa-3x mb-3"></i>
+                        <h3>Basic Plan</h3>
+                        <p class="plan-description">Ideal for occasional writers or those looking to get started.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-wrench"></i> Access to basic writing tools.</li>
+                            <li><i class="fas fa-file-alt"></i> Limited document storage.</li>
+                            <li><i class="fas fa-envelope"></i> Email support.</li>
+                        </ul>
+                        <p class="plan-price">$2</p>
+                        <a href="https://sites.google.com/view/pensandparable/home" class="btn btn-primary plan-button">Select Plan</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-7">
+                    <div class="plan text-center">
+                        <i class="fas fa-edit fa-3x mb-3"></i>
+                        <h3>Premium Plan</h3>
+                        <p class="plan-description">Perfect for writers seeking more advanced features and support.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-wrench"></i> Advanced writing tools.</li>
+                            <li><i class="fas fa-file-alt"></i> Enhanced document storage.</li>
+                            <li><i class="fas fa-envelope"></i> Priority email support.</li>
+                        </ul>
+                        <p class="plan-price">$8</p>
+                        <a href="https://sites.google.com/view/pensandparable/home" class="btn btn-primary plan-button">Select Plan</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-7">
+                    <div class="plan text-center">
+                        <i class="fas fa-star fa-3x mb-3"></i>
+                        <h3>Pro Plan</h3>
+                        <p class="plan-description">Designed for serious writers and professionals.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-wrench"></i> Full access to all writing tools and plugins.</li>
+                            <li><i class="fas fa-file-alt"></i> Extensive document storage.</li>
+                            <li><i class="fas fa-envelope"></i> Priority email and chat support.</li>
+                            <li><i class="fas fa-bolt"></i> Early access to new features.</li>
+                        </ul>
+                        <p class="plan-price">$12</p>
+                        <a href="https://sites.google.com/view/pensandparable/home" class="btn btn-primary plan-button">Select Plan</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-7">
+                    <div class="plan text-center">
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h3>Custom Plan</h3>
+                        <p class="plan-description">Tailor your plan to your specific requirements.</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-wrench"></i> Select the tools and features you need.</li>
+                            <li><i class="fas fa-file-alt"></i> Choose your storage capacity.</li>
+                            <li><i class="fas fa-envelope"></i> Get personalized support.</li>
+                        </ul>
+                        <p class="plan-price">Customized based on your selections.</p>
+                        <a href="#contact" class="btn btn-primary plan-button">Customize Plan</a>
+                    </div>
+                </div>
             </div>
     
-            <div class="plan" style="background-color: #fff; color: #333;">
-                <h3 style="color: #333;">Premium Plan</h3>
-                <p style="color: #666;">Perfect for writers seeking more advanced features and support.</p>
-                <ul style="color: #666;">
-                    <li>Advanced writing tools.</li>
-                    <li>Enhanced document storage.</li>
-                    <li>Priority email support.</li>
-                </ul>
-                <p class="price" style="color: #8a2be2;">$8</p>
-                <a href="https://sites.google.com/view/pensandparable/home#pro-plan" class="select-plan-btn">
-                    Select Plan
-                </a>
+            <div class="row mt-5">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <p class="get-started-text">How to Get Started:</p>
+                    <ol class="get-started-steps">
+                        <li>Select the plan that fits your needs.</li>
+                        <li>Choose any optional add-ons or customization for your plan.</li>
+                        <li>Proceed to checkout.</li>
+                        <li>Enjoy the benefits of premium writing tools and support.</li>
+                    </ol>
+                    <p class="note-text">Note: All plans come with a 30-day money-back guarantee, so you can try them risk-free.</p>
+                </div>
             </div>
-    
-            <div class="plan" style="background-color: #fff; color: #333;">
-                <h3 style="color: #333;">Pro Plan</h3>
-                <p style="color: #666;">Designed for serious writers and professionals.</p>
-                <ul style="color: #666;">
-                    <li>Full access to all writing tools and plugins.</li>
-                    <li>Extensive document storage.</li>
-                    <li>Priority email and chat support.</li>
-                    <li>Early access to new features.</li>
-                </ul>
-                <p class="price" style="color: #8a2be2;">$12</p>
-                <a href="https://sites.google.com/view/pensandparable/home#pro-plan" class="select-plan-btn">
-                    Select Plan
-                </a>
-            </div>
-    
-            <div class="plan" style="background-color: #fff; color: #333;">
-                <h3 style="color: #333;">Custom Plans</h3>
-                <p style="color: #666;">Tailor your plan to your specific requirements.</p>
-                <ul style="color: #666;">
-                    <li>Select the tools and features you need.</li>
-                    <li>Choose your storage capacity.</li>
-                    <li>Get personalized support.</li>
-                </ul>
-                <p class="price" style="color: #8a2be2;">Customized based on your selections.</p>
-                <a href="#" class="select-plan-btn customize-plan-btn">
-                    Customize Plan
-                </a>
-            </div>
-    
-            <p style="color: #141d90;">How to Get Started:</p>
-            <ol style="color: #ffffff;">
-                <li>Select the plan that fits your needs.</li>
-                <li>Choose any optional add-ons or customization for your plan.</li>
-                <li>Proceed to checkout.</li>
-                <li>Enjoy the benefits of premium writing tools and support.</li>
-            </ol>
-    
-            <p style="color: #9f1616;">Note: All plans come with a 30-day money-back guarantee, so you can try them risk-free.</p>
         </div>
     </section>
+   
+    
     
 
 
@@ -422,57 +433,49 @@
             <h2 class="display-4 text-center mb-4">Get in Touch</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    <!-- Tawk.to Chat Widget -->
+                    <div id="tawkto-widget" class="mt-4">
+                        <script type="text/javascript">
+                            var Tawk_API = Tawk_API || {};
+                            Tawk_API.visitor = {
+                                name: 'John Doe',
+                                email: 'john.doe@example.com'
+                            };
+                            Tawk_API.onLoad = function () {
+                                Tawk_API.setAttributes({
+                                    'name': 'John Doe'
+                                }, function (error) {
+                                    console.log(error);
+                                });
+                            };
+                            (function () {
+                                var s1 = document.createElement("script"),
+                                    s0 = document.getElementsByTagName("script")[0];
+                                s1.async = true;
+                                s1.src = 'https://embed.tawk.to/64f13b3ba91e863a5c10f675/1h974up3i';
+                                s1.charset = 'UTF-8';
+                                s1.setAttribute('crossorigin', '*');
+                                s0.parentNode.insertBefore(s1, s0);
+                            })();
+                        </script>
+                    </div>
+                    <!-- End of Tawk.to Chat Widget -->
                 </div>
                 <div class="col-md-6">
-                    <ul class="contact-details">
-                        <li><strong>Email:</strong> pensandparable@gmail.com</li>
-
-                        <li><strong>Address:</strong> Lahore,Pakistan</li>
-                    </ul>
-  <!-- Embed Tawk.to chat widget -->
-<div id="tawkto-widget" class="mt-4">
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {};
-        Tawk_API.visitor = {
-            name: 'John Doe',
-            email: 'john.doe@example.com'
-        };
-        Tawk_API.onLoad = function () {
-            Tawk_API.setAttributes({
-                'name': 'John Doe'
-            }, function (error) {
-                console.log(error);
-            });
-        };
-        (function () {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/64f13b3ba91e863a5c10f675/1h974up3i';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-</div>
-<!-- End of Tawk.to chat widget -->
-
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li><strong>Email:</strong> pensandparable@gmail.com</li>
+                            <li><strong>Address:</strong> Lahore, Pakistan</li>
+                            
+                        </ul>
+                        <p>We're here to help. Feel free to reach out to us via email or chat for any inquiries or assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
                     </div>
                 </div>
             </div>
